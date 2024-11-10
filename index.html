@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Wunschzettel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .wish-list {
+            width: 100%;
+            max-width: 600px;
+        }
+        .wish-item {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+        }
+        .wish-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+        .info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .info h2 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .price {
+            color: #000000;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .link {
+            text-align: right;
+            margin-left: 10px;
+        }
+        .link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .link a:hover {
+            text-decoration: underline;
+        }
+        .number {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-right: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mein Wunschzettel</h1>
+    
+    <div class="wish-list">
+        <!-- Duplikate diesen Block für jeden Wunsch -->
+        <div class="wish-item">
+            <div class="number">34</div>
+            <img src="https://dmau.imgix.net/media/catalog/product/1/6/168160-gulikit_2jmwrrv7iknxlmpc.jpg?auto=compress&auto=format&fill-color=FFFFFF&fit=fill&fill=solid&w=496&h=279" alt="Wunschbild">
+            <div class="info">
+                <h2>GuliKit KK3 Max</h2>
+                <p class="price">79,99€</p>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.de/gp/product/B0CQLNSGH4/ref=ox_sc_act_title_5?smid=A1M65KHEZYQSE8&th=1" target="_blank">Amazon</a>
+            </div>
+        </div>
+        
+        <!-- Beispiel eines weiteren Wunschzettel-Eintrags -->
+        <div class="wish-item">
+            <div class="number">35</div>
+            <img src="https://m.media-amazon.com/images/I/613Y0MMHV-L._AC_SL1200_.jpg" alt="Wunschbild">
+            <div class="info">
+                <h2>GAOMON M106K</h2>
+                <p class="price">49,99€</p>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.de/gp/product/B06XPLR6BP/ref=ox_sc_act_title_4?smid=A2KWEY72NHXCVE&th=1" target="_blank">Amazon</a>
+            </div>
+        </div>
+        <div class="wish-item">
+            <div class="number">36</div>
+            <img src="https://m.media-amazon.com/images/I/61j3SEUjMJL._AC_SL1000_.jpg" alt="Wunschbild">
+            <div class="info">
+                <h2>Echo Dot</h2>
+                <p class="price">47,98€</p>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.de/gp/product/B09B8RF4PY/ref=ox_sc_act_title_2?smid=A3JWKAKR8XB7XF&th=1" target="_blank">Amazon</a>
+            </div>
+        </div>
+        <div class="wish-item">
+            <div class="number">37</div>
+            <img src="https://m.media-amazon.com/images/I/61lQ5n-udzL._AC_SL1500_.jpg" alt="Wunschbild">
+            <div class="info">
+                <h2>microSDXC</h2>
+                <p class="price">19,90€</p>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.de/gp/product/B0B7NV73PJ/ref=ox_sc_act_title_1?smid=A3JWKAKR8XB7XF&th=1" target="_blank">Amazon</a>
+            </div>
+        </div>
+        <div class="wish-item">
+            <div class="number">38</div>
+            <img src="https://m.media-amazon.com/images/I/61ePWYKwmVL._AC_SL1500_.jpg" alt="Wunschbild">
+            <div class="info">
+                <h2>AGPTEK 64GB Tragbare USB MP3 Player</h2>
+                <p class="price">31,99€</p>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.de/gp/product/B0CKV9HDP2/ref=ox_sc_act_title_3?smid=A33G7CY43FZYTX&th=1" target="_blank">Amazon</a>
+            </div>
+        </div>
+        <div class="wish-item">
+            <div class="number">39</div>
+            <img src="https://m.media-amazon.com/images/I/612CyMjbeAL._AC_SL1500_.jpg" alt="Wunschbild">
+            <div class="info">
+                <h2>Fikwot FN501 Pro 512GB NVMe SSD</h2>
+                <p class="price">28,89€</p>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.de/Fikwot-FN501-Pro-512GB-NVMe/dp/B0C48MS1D5/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2STQVFKHHC6A1&dib=eyJ2IjoiMSJ9.3P51wvGFb89DGKsNC8Wn3G-PdcjkDROi0b3bKQbWw21pbluUTQ39JncbDyriwgSh5b-2Zhwj-txuQP3ADYoicJF9unQ1aYf4EmtiDtxWr--AGDm2hxUechJlL1mcqrSeeFGwxvEMPmYiy_OegCfvM7fCgEXbVzHrNlkKn7PrsRkZ4j-bQoLwIVIS_ffbCkb9G9eKvVVZ6IsnZRc9hZ7d3l8iAiqVZ-lXaCwJCDfCNg8.b6VhRkqrcn30nzT0LcMJ4iZMY6JzMNWxH1m-VgCFKKA&dib_tag=se&keywords=ssd%2Bm2.0&qid=1728389986&refinements=p_36%3A-3800&rnid=428358031&sprefix=ssd%2Bm2.0%2Caps%2C99&sr=8-4&th=1" target="_blank">Amazon</a>
+            </div>
+        </div>
+        <div class="wish-item">
+            <div class="number">40</div>
+            <img src="https://m.media-amazon.com/images/I/5134IDu4QYL._AC_SX569_.jpg" alt="Wunschbild">
+            <div class="info">
+                <h2>BG FUTURE AESTHETICS BANGE Roll-Top-Rucksack</h2>
+                <p class="price">79,99€</p>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.de/gp/product/B0D22B8BVV/ref=ox_sc_act_title_2?smid=AVXE0GCYH4C93&psc=1" target="_blank">Amazon</a>
+            </div>
+        </div>
+        <div class="wish-item">
+            <div class="number">41</div>
+            <img src="https://m.media-amazon.com/images/I/71ESA-741SL._AC_SL1500_.jpg" alt="Wunschbild">
+            <div class="info">
+                <h2>Mattel Spiele Phase 10 Flip Kartenspiel</h2>
+                <p class="price"> 10,99€</p>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.de/Mattel-Kartenspiel-beidseitig-bedruckten-HYN12/dp/B0CPKJKXP1/ref=pb_allspark_purchase_sims_desktop_d_sccl_3_2/260-1677921-6162312?pd_rd_w=tWZqd&content-id=amzn1.sym.1a4f1574-7423-4c0d-9193-4dd28d526c4a&pf_rd_p=1a4f1574-7423-4c0d-9193-4dd28d526c4a&pf_rd_r=595ARQR50RRMAYSGT82E&pd_rd_wg=2z1W7&pd_rd_r=eeae1831-25d2-4bae-a7b2-480fcb3ef2f0&pd_rd_i=B0CPKJKXP1&psc=1" target="_blank">Amazon</a>
+            </div>
+        </div>
+        <div class="wish-item">
+            <div class="number">42</div>
+            <img src="https://m.media-amazon.com/images/I/615JEWGsK1L._AC_SL1500_.jpg" alt="Wunschbild">
+            <div class="info">
+                <h2>Elgato Stream Deck Mini</h2>
+                <p class="price"> 65,00€</p>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.de/dp/B07DYRS1WH/?coliid=I3DEUIOI1QOCIO&colid=3OEHQHUOGCI5F&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it" target="_blank">Amazon</a>
+            </div>
+        </div>
+        <div class="wish-item">
+            <div class="number">43</div>
+            <img src="https://m.media-amazon.com/images/I/61uy79CHq4L._AC_SL1500_.jpg" alt="Wunschbild">
+            <div class="info">
+                <h2>2 Stück USB C Wireless Charging Receiver,</h2>
+                <p class="price"> 14,89€</p>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.de/Wireless-Charging-Receiver-Charger-Selbstklebendem/dp/B0B5HHYW9R/ref=sr_1_5?_mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1YNVO0YD7P43X&dib=eyJ2IjoiMSJ9.ekKRqbYMioWRvRywq2gN0Uk0YT5IrIxX5XcjNxPt6CyubbV6rp9p8S1U9xYiD_Z9Mi3lKwxlBc9Lz-P3HoetQKmUy-L0MJFKdVwUOVM17xpF5I0aCOT9wi6KzVXX0b-qo2i8uiZyFXfg7ZB5HYGWqsKH6ZgsFfmIvTP-1rfBsd8Qut7aY6ePJvdfVNPhDBjwXdLnnXTVzqhjUKkpryFpLgWirRtbEzoY7VEW1ayyIo.NM_h_NHqLFp5cmTe2DS212Fqf7_sCN6BOzuM82H6AS4&dib_tag=se&keywords=Wireless+Charger+Adapter&qid=1728390408&sprefix=wireless+charger+adapter%2Caps%2C108&sr=8-5" target="_blank">Amazon</a>
+            </div>
+        </div>
+        
+        <!-- Füge mehr Wunsch-Einträge hier hinzu -->
+    </div>
+
+</body>
+</html>
